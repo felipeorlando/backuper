@@ -24,7 +24,7 @@ mkdir "${backup_directory}"
 
 # create database backup
 db_file="${backup_directory}/database.sql"
-mysqldump -h $host -u $user --password=$pass $db_name > $db_file
+mysqldump --host=$host --user=$user --password=$pass $db_name > $db_file
 
 # create project backup
 project="/var/www/${project_dir}"
