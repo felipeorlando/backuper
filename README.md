@@ -8,6 +8,7 @@
 
 ### Usage:
 You need to pass some parameters, in order:
+
 1. Project file name
 1. Database name
 1. Database host name
