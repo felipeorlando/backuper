@@ -2,9 +2,10 @@
 :open_file_folder: A shell script for backup projects and databases
 
 ### Requirements:
-- Install zip: `sudo apt-get install zip`
+- Install zip: `sudo apt-get install zip`.
 - The project directory must be on `/var/www/` directory.
 - You must to create a `backups` directory on `$HOME`/`~/` directory.
+- Change permission of script to excute. Ex: `chmod +x script.sh`.
 
 ### Usage:
 You need to pass some parameters, in order:
