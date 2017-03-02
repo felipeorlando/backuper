@@ -14,8 +14,9 @@ You need to pass some parameters, in order:
 1. Database name
 1. Database host name
 1. Database user name
-1. Database password
+1. Database password **(not required)**
+1. Directory to create on `backups` directory **(not required)**
 
-Ex: `/backuper/script.sh project project-db 127.0.0.1 root 123456`
+Ex: `$ /backuper/script.sh project project-db 127.0.0.1 root 123456 blog-path`
 
-based on [simple-database-backup](https://github.com/felipeorlando/simple-database-backup), by [Felipe Orlando](https://github.com/felipeorlando) :facepunch:
+based on [simple-database-backup](https://github.com/felipeorlando/simple-database-backup), by [Felipe Orlando (me)](https://github.com/felipeorlando) :facepunch:
