@@ -23,8 +23,11 @@ backups="${HOME}/backups"
 time_stamp=$(date +%Y-%m-%d-%T)
 
 if [ -n "$inner_dir" ]; then
-  mkdir "${backups}/${inner_dir}"
-  backups="${backups}/${inner_dir}"
+  new_directory="${backups}/${inner_dir}"
+  if [ ! -d "$new_directory" ]; then
+    mkdir "${backups}/${inner_dir}"
+  fi
+  backups="$new_directory"
 fi
 
 backup_directory="${backups}/${time_stamp}"
